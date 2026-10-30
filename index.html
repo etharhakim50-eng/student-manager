@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="top-header">
+        <div class="logo">
+            <span>🎓</span>
+            <div>
+                <h1>Student Manager</h1>
+                <p>Small steps, big dreams ♡</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#students">Students</a>
+            <a href="#api">API Users</a>
+            <a href="#course">Course Info</a>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main id="home">
+
+            <!-- Add Student -->
+            <section class="add-section">
+
+                <h2>👤 Add New Student</h2>
+
+                <form id="studentForm">
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Student Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="studentEmail"
+                        placeholder="Student Email"
+                        required
+                    >
+
+                    <button type="submit">＋ Add Student</button>
+
+                </form>
+
+            </section>
+
+            <!-- Students and API -->
+            <div class="content-grid">
+
+                <!-- My Students -->
+                <section class="students-section" id="students">
+
+                    <h2>♧ My Students</h2>
+
+                    <div id="studentsList"></div>
+
+                </section>
+
+                <!-- API Users -->
+                <section class="api-section" id="api">
+
+                    <h2>◎ API Users</h2>
+
+                    <button id="loadUsers">
+                        ☁ Load API Users
+                    </button>
+
+                    <div id="apiUsersList"></div>
+
+                </section>
+
+            </div>
+
+            <!-- Other Actions -->
+            <section class="actions" id="course">
+
+                <h2>✦ Other Actions</h2>
+
+                <div class="action-buttons">
+
+                    <button id="courseBtn">
+                        ▣ Course Info
+                        <small>Enter your course name</small>
+                    </button>
+
+                    <button id="refreshBtn">
+                        ⟳ Refresh
+                        <small>Reload the page</small>
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

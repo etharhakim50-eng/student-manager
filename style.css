@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background: #191a29;
+    color: #292b42;
+}
+
+/* Header */
+
+.top-header {
+    background: #292a3d;
+    color: white;
+    padding: 25px 30px;
+    margin-left: 200px;
+    border-bottom: 1px solid #414258;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo span {
+    font-size: 42px;
+}
+
+.logo h1 {
+    font-size: 27px;
+}
+
+.logo p {
+    color: #c6b9ec;
+    margin-top: 6px;
+}
+
+/* Dashboard */
+
+.dashboard {
+    display: block;
+}
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background: #202132;
+    border-right: 1px solid #414258;
+    padding: 35px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #d1cbea;
+    padding: 16px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    background: #69638f;
+    color: white;
+}
+
+/* Main Content */
+
+main {
+    margin-left: 200px;
+    padding: 30px;
+    min-width: 0;
+}
+
+section {
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 22px;
+    font-size: 23px;
+}
+
+/* Add Student */
+
+.add-section {
+    background: #eee6fa;
+    width: 100%;
+}
+
+.add-section h2 {
+    color: #34344e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 17px;
+    border: 1px solid #cfc3e4;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    background: #faf8ff;
+}
+
+input:focus {
+    border-color: #7770a7;
+    box-shadow: 0 0 0 3px #dcd3ef;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+form button {
+    background: #625c91;
+    color: white;
+}
+
+/* Content Grid */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Students */
+
+.students-section {
+    background: #fff5e9;
+    min-height: 300px;
+}
+
+.student-card {
+    background: #eee6f5;
+    border-left: 4px solid #bca1d8;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-wrap: anywhere;
+}
+
+.student-card:nth-child(even) {
+    background: #e4f0e9;
+    border-left-color: #8dc9ad;
+}
+
+.student-card h3 {
+    color: #36364d;
+}
+
+.student-card p {
+    color: #77758e;
+}
+
+.delete-btn {
+    background: #e86e78;
+    color: white;
+    align-self: flex-end;
+    padding: 9px 17px;
+}
+
+/* API Users */
+
+.api-section {
+    background: #37384f;
+    color: #f4edff;
+}
+
+.api-section h2 {
+    color: #eee7ff;
+}
+
+#loadUsers {
+    width: 100%;
+    background: #278b7d;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.api-card {
+    background: #42435c;
+    border: 1px solid #62637e;
+    padding: 18px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow-wrap: anywhere;
+}
+
+.api-card h3 {
+    color: white;
+}
+
+.api-card p {
+    color: #d0cde0;
+}
+
+/* Other Actions */
+
+.actions {
+    background: #354263;
+    color: white;
+}
+
+.actions h2 {
+    color: #eee6ff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-buttons button {
+    flex: 1;
+    color: white;
+    text-align: left;
+    min-height: 95px;
+    font-size: 18px;
+}
+
+.action-buttons small {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#courseBtn {
+    background: #c48b59;
+}
+
+#refreshBtn {
+    background: #b66d8c;
+}
